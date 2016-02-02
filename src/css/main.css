@@ -1,9 +1,17 @@
+
+.container {
+    max-width: 970px;
+} 
 .image-holder {
     overflow: hidden;
     height: 100%;
 }
 .image-holder img {
     width: 100%;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 
@@ -46,12 +54,15 @@
 .main-nav .navbar-default {
     background: transparent;
     border-radius: 0;
+    margin-bottom: 0;
+    border-bottom: none;
 }
 .main-nav .navbar-default li {
     height: 100px;
 }
 .main-nav .navbar-default li:first-child a {
     border: none;
+    padding-left: 44px;
 }
 .main-nav .navbar-default li a  {
     display: inline-block;
@@ -65,6 +76,355 @@
     height: 100px;
     overflow: hidden;
 }
+.main-nav .navbar-default li.active a,
+.main-nav .navbar-default li:hover a {
+    color: #247ad2;
+    position: relative;
+    background: transparent;
+}
+.main-nav .navbar-default li.active a:after,
+.main-nav .navbar-default li:hover a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #247ad2;
+    height: 3px;
+    width: 100%;
+}
 .main-nav .navbar-collapse {
     padding: 0;
+}
+
+/*///////////main-slider///////////*/
+.main-slider .to-shadow {
+    background: #000;
+    opacity: .6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+.main-slider .bxslider li {
+    background: #000;
+}
+.main-slider .bx-viewport,
+.items .bx-viewport {
+    border: none; 
+    left: 0;
+    box-shadow: none;
+}
+.main-slider .bx-default-pager {
+    display: none;
+}
+.main-slider .bx-wrapper .bx-controls-direction a {
+    width: 27px;
+    height: 47px;
+    margin-top: -47px;
+}   
+.main-slider .bx-wrapper .bx-next {
+    background: url(../img/icons/right.png) no-repeat 0 1px;
+    right: 126px;
+}
+.main-slider .bx-wrapper .bx-prev {
+        background: url(../img/icons/left.png) no-repeat 0 1px;
+        left: 126px;
+}
+.main-slider .bxslider li .content-holder {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    text-align: center;
+    padding-top: 82px;
+    width: 100%;
+}
+.main-slider .bxslider li .content-wraper {
+    width: 970px;
+    margin: 0 auto;
+    padding-left: 162px;
+}
+.main-slider .bxslider li .content-holder .h-holder {
+    width: 550px;
+    text-align: left;
+}
+.main-slider .bxslider li .content-holder h1 {
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.main-slider .bxslider li .content-holder h2 {
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.main-slider .bxslider li .content-holder .btn-wraper {
+    text-align: left;
+}
+.main-slider .bxslider li .content-holder .btn-holder {
+    border: 3px solid #fff;
+    padding: 23px 24px;
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    display: inline-block;
+    margin-top: 78px;
+}
+
+/*///////////gen-header//////////////*/
+.gen-header {
+    margin-top: 140px;
+    margin-bottom: 115px;
+}
+.gen-header h1 {
+    color: #545353;
+    font-family: "Segoe UI";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+}
+
+
+/*////////////////content//////////////////*/
+.content h1 {
+    margin-top: 0;
+    line-height: 24px;
+    color: #545353;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    margin-bottom: 43px;
+    font-weight: 400;
+}
+.content p {
+    line-height: 24px;
+}
+.content .btn-holder {
+    border: 1px solid #247ad2;
+    display: inline-block;
+    padding: 11px;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 58px;
+    min-width: 159px;
+}
+.content .desc-holder {
+    padding-right: 50px;
+}
+.content .desc-holder.right {
+    padding-left: 50px;
+} 
+
+/*////////////items//////////////////*/
+.items .product-item {
+    height: 455px;
+    border: 1px solid #ddd;
+    padding-top: 14px;
+}
+.items .product-item .header-holder {
+    margin-left: 13px;
+}
+.items .product-item .header-holder span {
+    white-space: nowrap;
+    padding-right: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+ .items .product-item .header-holder h1 {
+    margin-top: 0px;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.items .product-item .image-holder {
+    height: 200px;
+    margin-bottom: 13px;
+}
+.items .product-item .desc-holder {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-height: 72px;
+    overflow: hidden;
+}
+.items .product-item .btn-holder {
+    margin-top: 26px;
+    margin-left: 12px;
+}
+.items .product-item .btn-holder a {
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.items .slider-navs {
+    text-align: center;
+}
+.items .slider-navs .slide-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 122px;
+    margin-right: 122px;
+}
+.items .bx-wrapper .bx-pager {
+    display: none;
+}
+.content .blueimp-gallery a.prev {
+    background: url(../img/icons/left-nav-wt.png) no-repeat 1px;
+    border: none;
+    border-radius: 0;
+    height: 49px;
+    left: -45px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    background-size: cover;
+}
+.content .blueimp-gallery:hover a.prev {
+    left: 20px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.content .blueimp-gallery a.next {
+    background: url(../img/icons/right-nav-wt.png) no-repeat 1px;
+    border: none;
+    border-radius: 0;
+    height: 49px;
+    background-size: cover;
+    right: -45px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.content .blueimp-gallery:hover a.next {
+    right: 20px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+
+/*////////////number-blocks/////////////*/
+.number-blocks .num-block {
+    float: left;
+    margin-right: 50%;
+    position: relative;
+    padding-right: 90px;
+}
+.number-blocks .num-block:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: #d4d2d2;
+}
+.number-blocks .num-block.rt {
+    margin-left: 50%;
+    padding-left: 90px;
+    padding-right: 0;
+    margin-right: 0;
+}
+.number-blocks .num-block.rt:after {
+    left: -5px;
+}
+.number-blocks .num-block .round-num {
+    position: absolute;
+    top: 29px;
+    right: -28px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #d4d2d2;
+    background: #fff;
+    border-radius: 50%;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 13px;
+    z-index: 1;
+}
+.number-blocks .num-block.rt .round-num {
+    left: -32px;
+    right: auto;
+}
+.number-blocks .num-block h1,
+.number-blocks .num-block p {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    line-height: 18px;
+    color: #292929;
+    font-size: 24px;
+}
+.number-blocks .num-block p {
+    color: #767777;
+    font-size: 16px;
+}
+
+/*///////////footer//////////////*/
+.footer {
+    background: #292929;
+    padding-top: 70px;
+}
+.social-nets h3 {
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.social-nets li {
+    margin-bottom: 10px;
+}
+.social-nets li a {
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: none;
+}
+.social-nets li a i {
+    margin-right: 10px;
+}
+.footer .rights {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    font-weight: 300;
+}
+.footer .rights .color {
+    color: #247ad2;
 }
