@@ -1,0 +1,70 @@
+.image-holder {
+    overflow: hidden;
+    height: 100%;
+}
+.image-holder img {
+    width: 100%;
+}
+
+
+
+/*///////logo-line////////*/
+.logo-line {
+    padding-top: 33px;
+    padding-bottom: 17px;
+    background: #292929;
+}
+.logo-line a {
+    color: #fffefe;
+    font-family: "Segoe UI";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: none;
+}
+.logo-line .main-logo .image-holder {
+    max-width: 182px;
+}
+.logo-line .main-logo {
+    position: relative;
+    top: -14px;
+}
+.logo-line .email {
+    display: inline-block;
+    margin-left: 57px;
+}
+.logo-line .phone {
+    margin-left: 53px;
+}
+.logo-line .email img {
+    margin-right: 4px;
+}
+.logo-line .language a {
+    display: inline-block;
+    margin-left: 35px;
+}
+.main-nav .navbar-default {
+    background: transparent;
+    border-radius: 0;
+}
+.main-nav .navbar-default li {
+    height: 100px;
+}
+.main-nav .navbar-default li:first-child a {
+    border: none;
+}
+.main-nav .navbar-default li a  {
+    display: inline-block;
+    padding: 38px 34px;
+    color: #292929;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-left: 1px solid #e5e2e2;
+    height: 100px;
+    overflow: hidden;
+}
+.main-nav .navbar-collapse {
+    padding: 0;
+}
