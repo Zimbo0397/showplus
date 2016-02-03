@@ -44,7 +44,8 @@ $(function () {
         }
     ], {
         container: '#blueimp-video-carousel',
-        carousel: true
+        carousel: true,
+         startSlideshow: false
     });
     $('#blueimpPrev').on('click', function (e) {
         e.preventDefault();

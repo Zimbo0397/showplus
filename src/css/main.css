@@ -1,4 +1,7 @@
 
+.gray-wraper {
+    background: #f5f4f4;
+}
 .container {
     max-width: 970px;
 } 
@@ -13,7 +16,20 @@ ul {
     list-style: none;
     padding-left: 0;
 }
-
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: #247ad2;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background: #fff;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
 
 
 /*///////logo-line////////*/
@@ -29,6 +45,15 @@ ul {
     font-weight: 300;
     line-height: 18px;
     text-decoration: none;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+.logo-line a:hover {
+    color: #247ad2;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;    
 }
 .logo-line .main-logo .image-holder {
     max-width: 182px;
@@ -50,6 +75,14 @@ ul {
 .logo-line .language a {
     display: inline-block;
     margin-left: 35px;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+.logo-line .language a:hover {
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s; 
 }
 .main-nav .navbar-default {
     background: transparent;
@@ -81,6 +114,7 @@ ul {
     color: #247ad2;
     position: relative;
     background: transparent;
+
 }
 .main-nav .navbar-default li.active a:after,
 .main-nav .navbar-default li:hover a:after {
@@ -110,7 +144,8 @@ ul {
     background: #000;
 }
 .main-slider .bx-viewport,
-.items .bx-viewport {
+.items .bx-viewport,
+.tecnical-desc .bx-viewport {
     border: none; 
     left: 0;
     box-shadow: none;
@@ -122,7 +157,10 @@ ul {
     width: 27px;
     height: 47px;
     margin-top: -47px;
-}   
+}  
+.main-slider .bx-wrapper .bx-controls-direction a:hover {
+    -webkit-filter: brightness(10) saturate(10);
+} 
 .main-slider .bx-wrapper .bx-next {
     background: url(../img/icons/right.png) no-repeat 0 1px;
     right: 126px;
@@ -130,6 +168,21 @@ ul {
 .main-slider .bx-wrapper .bx-prev {
         background: url(../img/icons/left.png) no-repeat 0 1px;
         left: 126px;
+}
+.items .bx-wrapper .bx-next {
+    background: url(../img/icons/left-nav.png) no-repeat 0 1px;
+        left: 10px;
+        height: 47px;
+}
+.items .bx-wrapper .bx-prev {
+    background: url(../img/icons/right-nav.png) no-repeat 0 1px;
+        right: 6px;
+        left: auto;
+        height: 47px;
+}
+.items .bx-wrapper .bx-next:hover,
+.items .bx-wrapper .bx-prev:hover {
+    -webkit-filter: brightness(10);
 }
 .main-slider .bxslider li .content-holder {
     position: absolute;
@@ -175,6 +228,16 @@ ul {
     line-height: 18px;
     display: inline-block;
     margin-top: 78px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.main-slider .bxslider li .content-holder .btn-holder:hover {
+    color: #247AD2;
+    border-color: #247AD2;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
 }
 
 /*///////////gen-header//////////////*/
@@ -187,7 +250,7 @@ ul {
     font-family: "Segoe UI";
     font-size: 35px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 35px;
     text-align: center;
 }
 
@@ -216,6 +279,17 @@ ul {
     line-height: 24px;
     margin-top: 58px;
     min-width: 159px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.content .btn-holder:hover {
+    background: #247ad2;
+    color: #fff;
+    border-color: #fff;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }
 .content .desc-holder {
     padding-right: 50px;
@@ -270,6 +344,9 @@ ul {
 .items .product-item .btn-holder {
     margin-top: 26px;
     margin-left: 12px;
+}
+.items .product-item .btn-holder:hover {
+    opacity: .8;
 }
 .items .product-item .btn-holder a {
     color: #247ad2;
@@ -328,6 +405,9 @@ ul {
 
 
 /*////////////number-blocks/////////////*/
+.number-blocks {
+    margin-bottom: 150px;
+}
 .number-blocks .num-block {
     float: left;
     margin-right: 50%;
@@ -411,6 +491,15 @@ ul {
     font-weight: 300;
     line-height: 24px;
     text-decoration: none;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+.social-nets li a:hover {
+    color: #247ad2;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
 }
 .social-nets li a i {
     margin-right: 10px;
@@ -427,4 +516,365 @@ ul {
 }
 .footer .rights .color {
     color: #247ad2;
+}
+
+
+/*////////////catalog///////////////*/
+.catalog {
+    margin-bottom: 200px;
+}
+.cat-block {
+    padding-left: 480px;
+    height: 360px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: relative;
+}
+.cat-block.rt {
+    padding-right: 480px;
+    padding-left: 0;
+}
+.cat-block .image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cat-block.rt .image-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+.cat-block .white-body {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 28px 60px;
+}
+.cat-block .white-body h1 {
+    margin-top: 0;
+    color: #464545;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cat-block .white-body p {
+    color: #545353;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 12px;
+    height: 120px;
+    overflow: hidden;
+}
+.cat-block .white-body .btn-holder {
+    margin-bottom: 14px;
+}
+.cat-block .white-body .btn-holder a {
+    color: #292929;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.cat-block .white-body .price-holder {
+    color: #195da3;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.cat-block .white-body .price-holder span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*////////////item-slider-wraper//////////////////*/
+.item-slider-wraper {
+    padding: 70px 60px;
+    background: #e0e2e3;
+}
+.item-slider-wraper .bx-viewport {
+    background: #e0e2e3;
+}
+.item-slider-wraper .bx-wrapper {
+    margin-bottom: 0;
+}
+.item-slider-wraper .bx-viewport .product-item {
+    background: #fff;
+    padding: 10px;
+}
+.item-slider-wraper .product-item .image-holder {
+    height: 185px;
+}
+.item-slider-wraper .product-item .image-holder img {
+    width: auto;
+    height: 100%;
+}
+.item-slider-wraper .product-item .header-holder {
+    margin-left: 0;
+}
+.item-slider-wraper .product-item .header-holder h1 {
+    color: #373737;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.item-slider-wraper .product-item .desc-holder {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 0;
+}
+.item-slider-wraper .product-item .btn-holder {
+    margin-left: 0;
+}
+.item-slider-wraper .product-item .btn-holder a {
+    color: #292929;
+    font-variant: small-caps;
+}
+.item-slider-wraper .product-item {
+    height: 402px;
+}
+.item-slider-wraper .bx-wrapper .bx-prev {
+    background: url(../img/icons/right-nav.png) no-repeat 0 0px;
+    height: 48px;
+    right: -34px;
+    width: 27px;
+}
+.item-slider-wraper .bx-wrapper .bx-next {
+    background: url(../img/icons/left-nav.png) no-repeat 0 0px;
+    height: 48px;
+    left: -34px;
+}
+.product-nav ul {
+    margin-left: 0;
+    border-right: 1px solid #e5e2e2;
+    border-bottom: 1px solid #e5e2e2;
+    margin-bottom: 0;
+}
+.product-nav ul li  {
+    padding: 0;
+    text-align: center;
+}
+.product-nav ul li a {
+    padding-top: 31px;
+    padding-bottom: 31px;
+    text-decoration: none;
+     display: inline-block;
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 11px;
+    padding-left: 35px;
+    padding-right: 37px;
+    border-left: 1px solid #e5e2e2;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.product-nav ul li a:hover {
+    color: #247AD2;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+/*//////////product-sell//////////////*/
+.product-sell .side-desc {
+    margin-top: 5px;
+}
+.product-sell .side-desc .breadcrums-block ul li a,
+.product-sell .side-desc .breadcrums-block ul li  {
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    text-decoration: underline;
+}
+.product-sell .side-desc .breadcrums-block ul li {
+    text-decoration: none;
+}
+.product-sell .side-desc h1 {
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 30px;
+}
+.product-sell .side-desc p {
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    height: 153px;
+    overflow: hidden;
+}
+.product-sell .btn-wrap {
+    text-align: right;
+}
+.product-sell .btn-holder {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #247AD2;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 22px;
+    padding-right: 22px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.product-sell .btn-holder:hover {
+    background: #247AD2;
+    color: #fff;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.product-sell .price-holder {
+    height: 60px;
+    background-color: #f6f4f4;
+    box-shadow: -2px 2.3px 13px rgba(0, 0, 0, 0.22);
+    position: absolute;
+    bottom: 30px;
+    left: -5px;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 11px;
+    padding-top: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*///////////tecnical-desc//////////////*/
+.desc-row {
+    margin-top: 80px;
+}
+.tecnical-desc  h1 {
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 300;
+}
+.tecnical-desc h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 30px;    
+}
+.tecnical-desc {
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    font-size: 18px;
+}
+.tecnical-desc .slider-holder {
+    padding-left: 100px;
+}
+
+
+
+/*////////////////reviewSlider////////////////*/
+.review-item {
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 40px;
+}
+.review-item  h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.review-item time {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.tecnical-desc .bx-pager {
+    display: none;
+}
+.tecnical-desc .bx-wrapper .bx-next,
+.tecnical-desc .bx-wrapper .bx-next:hover {
+    background: url(../img/icons/right-itemarr.png) no-repeat 0px 0px;
+    right: 80px;
+}
+.tecnical-desc .bx-wrapper .bx-next:hover,
+.tecnical-desc .bx-wrapper .bx-prev:hover {
+    opacity: .8;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.tecnical-desc .bx-wrapper .bx-prev,
+.tecnical-desc .bx-wrapper .bx-prev:hover {
+    background: url(../img/icons/left-itemarr.png) no-repeat 0 0px;
+    left: 80px;
+}
+
+.tecnical-desc .bx-controls-direction {
+    bottom: -28px;
+    position: relative;
+}
+
+
+/*///////////////callback////////////*/
+.callback {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.callback h1 {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    margin-bottom: 74px;
+}
+.callback form {
+    width: 660px;
+    display: inline-block;
+}
+.callback .inputs-holder input:first-child {
+    margin-right: 18px;
+}
+.callback .inputs-holder input {
+    width: 320px;
+    height: 55px;
+    display: block;
+    float: left;
+    padding-left: 13px;
+    margin-bottom: 18px;
+}
+.callback .textarea-holder textarea {
+    width: 100%;
+    padding: 13px;
+    resize: none;
+    min-height: 120px; 
+}
+.callback .btn-holder {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #247ad2;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.callback .btn-holder:hover {
+    background: #247ad2;
+    color: #fff;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }
