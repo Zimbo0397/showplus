@@ -878,3 +878,123 @@ ul {
     -o-transition: all .2s;
     transition: all .2s;
 }
+
+
+
+
+#myModal-callback h4 {
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+#myModal-callback .modal-header,
+#myModal-callback .modal-footer {
+    border: none;
+}
+#myModal-callback .modal-body input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 29px;
+    padding-left: 10px;
+}
+#myModal-callback .modal-body .half-input {
+    width: 155px;
+    float: left;
+}
+#myModal-callback .modal-body .half-input.rt {
+    float: right;
+}
+.modal-content {
+    max-width: 380px;
+    margin: 0 auto;
+    border-radius: 0;
+}
+.modal-footer button {
+    color: #fefefe;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    font-variant: small-caps;
+    background: #247ad2;
+    border: none;
+    outline: none;
+    padding: 9px;
+    margin: 0 auto;
+    width: 270px;
+}
+
+.side-socals {
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+.side-socals .sc-block {
+    width: 48px;
+    height: 42px;
+    opacity: 0.73;
+    background-color: white;
+    text-align: center;
+    padding-top: 9px;
+    margin-bottom: 5px;
+}
+.mycallback{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    -webkit-transform: rotate(11.5deg);
+      -ms-transform: rotate(11.5deg);
+          transform: rotate(11.5deg);
+    -ms-transform-origin: center center;
+      transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -webkit-animation-name: mycallback;
+          animation-name: mycallback;
+    -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+    -webkit-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+}
+@keyframes mycallback {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    1% {
+        -webkit-transform: rotate(-11.5deg);transform: rotate(-11.5deg);
+    }
+    2% {
+        -webkit-transform: rotate(11.5deg);transform: rotate(11.5deg);
+    }
+    3% {
+        -webkit-transform: rotate(-11.5deg);transform: rotate(-11.5deg);
+    }
+    4% {
+        -webkit-transform: rotate(11.5deg);transform: rotate(11.5deg);
+    }
+    5% {
+        -webkit-transform: rotate(-11.5deg);transform: rotate(-11.5deg);
+    }
+    6% {
+        -webkit-transform: rotate(11.5deg);transform: rotate(11.5deg);
+    }
+    7% {
+        -webkit-transform: rotate(-11.5deg);transform: rotate(-11.5deg);
+    }
+    8% {
+        -webkit-transform: rotate(11.5deg);transform: rotate(11.5deg);
+    }
+    9% {
+        -webkit-transform: rotate(-11.5deg);transform: rotate(-11.5deg);
+    }
+    10% {
+        -webkit-transform: rotate(11.5deg);transform: rotate(11.5deg);
+    }
+    11% {
+        -webkit-transform: rotate(0deg);
+    }
+   100%   {
+        -webkit-transform: rotate(0deg);
+   }
+}
