@@ -74,7 +74,7 @@ ul {
 }
 .logo-line .language a {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 12px;
     -webkit-transition: color .5s;
     -o-transition: color .5s;
     transition: color .5s;
@@ -92,6 +92,13 @@ ul {
 }
 .main-nav .navbar-default li {
     height: 100px;
+}
+.main-nav .navbar-default li a span {
+    display: block;
+    max-width: 103px;
+    max-height: 44px;
+    overflow: hidden;
+    text-align: center;
 }
 .main-nav .navbar-default li:first-child a {
     border: none;

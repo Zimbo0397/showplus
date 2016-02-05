@@ -39,7 +39,7 @@
 		margin-left: 0;
 	}
 	.logo-line .language a {
-		margin-left: 15px;
+		margin-left: 4px;
 	}
 	.main-nav .navbar-default li a {
 	    padding: 35px 14px;
@@ -102,6 +102,13 @@
 	}
 }
 @media (max-width: 767px) {
+	.main-nav .navbar-default li a span {
+		display: block;
+	    max-width: inherit;
+	    max-height: inherit;
+	    overflow: hidden;
+	    text-align: center;
+	}
 	.side-socals,
 	.mycallback {
 		display: none;
