@@ -84,6 +84,9 @@ ul {
     -o-transition: color .2s;
     transition: color .2s; 
 }
+.main-nav {
+    border-bottom: 1px solid #E5E2E2;
+}
 .main-nav .navbar-default {
     background: transparent;
     border-radius: 0;
@@ -609,7 +612,7 @@ ul {
 /*////////////item-slider-wraper//////////////////*/
 .item-slider-wraper {
     padding: 70px 60px;
-    background: #e0e2e3;
+    background: #4b4a49;
 }
 .item-slider-wraper .bx-viewport {
     background: #e0e2e3;
@@ -972,6 +975,129 @@ ul {
     text-align: center;
     padding-top: 9px;
     margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*////////////////services//////////////////*/
+.services {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.services .serv-item .image-holder {
+    max-height: 338px;
+
+} 
+.services .serv-item .text-holder h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.services .serv-item .text-holder p {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*/contact-us/*/
+.contacts {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.contacts h1 {
+    color: #545353;
+    font-family: "Segoe UI";
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.contact-us .form-group input {
+    height: 45px;
+    border: 1px solid #e5e5e5;
+    padding-left: 15px;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    outline-color: #247AD2;  
+}
+.contact-us .form-group textarea {
+    border: 1px solid #e5e5e5;
+    min-height: 250px;
+    resize: none;
+    display: block;
+    width: 100%;
+    outline-color: #247AD2;  
+    padding: 15px;
+}
+.contact-us .btn-holder {
+    text-align: center;
+}
+.contact-us .btn-holder button {
+    border: 1px solid #247ad2;
+    display: inline-block;
+    padding: 11px;
+    background: transparent;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 20px;
+    min-width: 159px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.contact-us .btn-holder button:hover {
+    background: #247AD2;
+    color: #fff;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+
+.our-contacts ul {
+    list-style: none;
+    padding-left: 0;
+} 
+.our-contacts ul li {
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.our-contacts ul li .key {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 25px;
+    color: #595353;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.our-contacts ul li .value {
+    color: #247AD2;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
 }
 .mycallback{
     position: fixed;

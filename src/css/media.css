@@ -102,6 +102,12 @@
 	}
 }
 @media (max-width: 767px) {
+	.contacts h1 {
+		font-size: 33px;
+	}
+	.main-nav .navbar-default li:first-child a {
+		border-bottom: 1px solid #e5e2e2;
+	}
 	.main-nav .navbar-default li a span {
 		display: block;
 	    max-width: inherit;
@@ -313,5 +319,8 @@
 	}
 	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
 		background: #ffF;
+	}
+	.our-contacts ul li .value {
+		font-size: 14px;
 	}
 } 
