@@ -126,7 +126,7 @@
                                     Гарантирует качество
                                 </h2>
                             </div>
-                            <a href="">
+                            <a href="" data-toggle="modal" data-target="#myModal-callback">
                                 <div class="btn-wraper">
                                     <div class="btn-holder">
                                         <span>
@@ -219,18 +219,19 @@
                             </h1>
                             <p>
                                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
-                                При создании генератора мы использовали небезызвестный универсальный код речей. 
+                                сленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                сленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                сленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+
                             </p>
 
-                            <a href="">
-                                <div class="btn-wraper">
-                                    <div class="btn-holder">
-                                        <span>
-                                            Читать больше
-                                        </span>
-                                    </div>
+                            <div class="btn-wraper">
+                                <div class="btn-holder">
+                                    <span>
+                                        Читать больше
+                                    </span>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
@@ -423,11 +424,11 @@
             </ul>
         </section>
 
-        <section class="gen-header">
+        <section id="anch7" class="gen-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>
+                        <h1 >
                             Видео
                         </h1>
                     </div>
@@ -628,26 +629,28 @@
         <div class="modal fade" id="myModal-callback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
-              </div>
-              <div class="modal-body">
-                <div class="inputs-holder">
-                    <input type="text" placeholder="Имя:">
-                    <div class="half-holder clearfix">
-                        <div class="half-input">
-                            <input type="text" placeholder="Номер телефона:">
-                        </div>
-                        <div class="half-input rt">
-                            <input type="text" placeholder="Зручний час:">
+                <form action="">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="inputs-holder">
+                        <input type="text" placeholder="Имя:">
+                        <div class="half-holder clearfix">
+                            <div class="half-input">
+                                <input type="text" placeholder="Номер телефона:">
+                            </div>
+                            <div class="half-input rt">
+                                <input type="text" placeholder="Зручний час:">
+                            </div>
                         </div>
                     </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button">Зателефонуйте менi</button>
-              </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button">Зателефонуйте менi</button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
@@ -691,6 +694,24 @@
 
             // slider = $('.item-slider').bxSlider();
             // $('#slide-next').on('click', slider.goToNextSlide)
+        </script>
+        <script>
+            $(window).on('load', function(){
+                var heightEelements = $('.content .desc-holder p')
+                for (var i = 0; i < heightEelements.length; i++) {
+                    console.log($(heightEelements[i]).height())
+                if ( $(heightEelements[i]).height() > 168) {
+                    $('.content .desc-holder .btn-holder').addClass('active')
+                };
+                    
+                };
+                // .each(function(){
+                // });
+            });
+            $('.content .desc-holder .btn-holder').on('click', function(){
+                $(this).closest('.content .desc-holder').find('p').addClass('open');
+                $(this).fadeOut()
+            });
         </script>
     </body>
 </html>

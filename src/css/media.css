@@ -1,6 +1,17 @@
+@media (max-width: 1460px) {
+	.main-slider .bxslider li .image-holder {
+	    height: 430px; 
+	} 
+}
 @media (max-width: 1200px) {
 	.main-slider .bxslider li .content-holder .btn-holder {
 		margin-top: 38px;
+	}
+	.main-slider .bxslider li .image-holder {
+	    height: 370px; 
+	} 
+	.main-slider .bxslider li .content-holder {
+		padding-top: 42px;
 	}
 }
 @media (max-width: 991px) {
@@ -54,7 +65,7 @@
 		margin-top: 38px;
 	}
 	.main-slider .bxslider li .content-holder {
-		padding-top: 0;
+		padding-top: 40px;
 	}
 	.content .desc-holder {
 		padding-right: 10px;
@@ -100,8 +111,26 @@
 		padding-left: 13px;
     	padding-right: 13px;
 	}
+	.main-slider .bxslider li .image-holder img {
+	    height: 100%;
+	    max-width: inherit;
+	    width: auto;
+	} 
 }
 @media (max-width: 767px) {
+	.product-nav ul {
+		border-left: 1px solid #e5e2e2;
+	}
+	.content .desc-holder p {
+		max-height: inherit;
+	}
+	.content .image-holder {
+		margin-top: 40px;
+	}
+	.content .desc-holder .btn-holder,
+	.content .desc-holder .btn-holder.active {
+		display: none;
+	}
 	.contacts h1 {
 		font-size: 33px;
 	}
@@ -287,6 +316,12 @@
 	}
 }
 @media (max-width: 505px) {
+	.productModal .modal-content {
+	    padding: 40px 20px; 
+	} 
+	.main-slider .bxslider li .content-holder {
+		padding-top: 100px;
+	}
 	.item-slider-wraper .product-item .image-holder img {
 		width: auto;
 		height: 100%;

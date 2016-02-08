@@ -199,22 +199,22 @@
                         <nav>
                             <ul class="list-inline">
                                 <li>
-                                    <a href="">
+                                    <a href="" data-toggle="modal" data-target="#myModal">
                                         <span>Заказать товар</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="#anch1">
                                         <span>Описание товара</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="index.html#anch7">
                                         <span>Видео</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="#anchCall">
                                         <span>Оставить отзыв</span>
                                     </a>
                                 </li>
@@ -268,7 +268,7 @@
                                 Новая разработка нашей компании генератор пены YB-0019 отличается от своих предшественников более высокой производительностью за счет принципиально новой форсунки. Все так же надежен и безопасен, более продуктивен.
                             </p>
                             <div class="btn-wrap">
-                                <a href="">
+                                <a href="" data-toggle="modal" data-target="#myModal">
                                     <div class="btn-holder">
                                         <span>
                                             Заказать
@@ -281,7 +281,7 @@
                 </div>
                 <div class="row desc-row">
                     <div class="col-md-6">
-                        <div class="tecnical-desc">
+                        <div id="anch1" class="tecnical-desc">
                             <h1>
                                 Технические характеристики
                             </h1>
@@ -432,7 +432,7 @@
             </div>
         </section>
 
-        <section class="callback">
+        <section id="anchCall" class="callback">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -447,13 +447,11 @@
                             <div class="textarea-holder">
                                 <textarea placeholder="Сообщение:"></textarea>
                             </div>
-                            <a href="">
                                 <div class="btn-holder">
-                                    <span>
+                                    <button>
                                         Отправить
-                                    </span>
+                                    </button>
                                 </div>
-                            </a>
                         </form>
                     </div>
                 </div>
@@ -529,6 +527,25 @@
             <img src="img/icons/callback.png" alt="">
         </div>
         
+        <!-- Modal -->
+        <div class=" productModal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h1>Заказать товар</h1>
+              <div class="inputs-holder">
+                  <input type="text" placeholder="Имя:">
+                  <input type="text" placeholder="Телефон:">
+                  <input type="text" placeholder="E-mail:">
+              </div>
+              <div class="btn-holder">
+                  <button>
+                      Отправить
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 

@@ -153,6 +153,13 @@ ul {
 .main-slider .bxslider li {
     background: #000;
 }
+.main-slider .bxslider li .image-holder {
+    height: 550px; 
+}
+/*.main-slider .bxslider li .image-holder img {
+    height: 100%;
+    width: auto;
+}*/
 .main-slider .bx-viewport,
 .items .bx-viewport,
 .tecnical-desc .bx-viewport {
@@ -304,10 +311,22 @@ ul {
 .content .desc-holder {
     padding-right: 50px;
 }
+.content .desc-holder p {
+    max-height: 220px;
+    overflow: hidden;
+}
+.content .desc-holder p.open {
+    max-height: inherit;
+}
 .content .desc-holder.right {
     padding-left: 50px;
 } 
-
+.content .desc-holder .btn-holder {
+    display: none;
+}
+.content .desc-holder .btn-holder.active {
+    display: inline-block;
+}
 /*////////////items//////////////////*/
 .items .product-item {
     height: 455px;
@@ -316,6 +335,8 @@ ul {
 }
 .items .product-item .header-holder {
     margin-left: 13px;
+    height: 70px;
+    position: relative;
 }
 .items .product-item .header-holder span {
     white-space: nowrap;
@@ -335,6 +356,9 @@ ul {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    position: absolute;
+    bottom: 0px;
+    max-width: 99%;
 }
 .items .product-item .image-holder {
     height: 200px;
@@ -894,9 +918,13 @@ ul {
 }
 .callback .btn-holder {
     display: inline-block;
+}
+.callback .btn-holder button {
+    display: inline-block;
     padding: 15px;
     border: 1px solid #247ad2;
     color: #247ad2;
+    background: transparent;
     font-family: "Segoe UI";
     font-size: 18px;
     font-weight: 600;
@@ -907,7 +935,7 @@ ul {
     -o-transition: all .5s;
     transition: all .5s;
 }
-.callback .btn-holder:hover {
+.callback .btn-holder button:hover {
     background: #247ad2;
     color: #fff;
     -webkit-transition: all .2s;
@@ -1157,4 +1185,41 @@ ul {
    100%   {
         -webkit-transform: rotate(0deg);
    }
+}
+
+
+/*//productModal//*/
+.productModal .modal-content {
+    padding: 40px 60px; 
+}
+.productModal h1 {
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 300;
+}
+.productModal .inputs-holder input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.productModal .btn-holder {
+    text-align: center;
+}
+.productModal .btn-holder button {
+    display: inline-block;
+    background: transparent;
+    color: #464545;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    border: 1px solid #247ad2;
+    padding: 10px;
+    min-width: 140px;
+}
+.productModal .btn-holder button:hover {
+    background: #247ad2;
+    color: #fff;
 }
