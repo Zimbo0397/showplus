@@ -958,6 +958,12 @@ ul {
     text-transform: uppercase;
     text-align: center;
 }
+#myModal-callback .modal-content {
+    padding: 20px;
+}
+#myModal-callback .modal-body {
+    padding: 0;
+}
 #myModal-callback .modal-header,
 #myModal-callback .modal-footer {
     border: none;
@@ -1234,4 +1240,9 @@ ul {
 .productModal .btn-holder button:hover {
     background: #247ad2;
     color: #fff;
+}
+
+/*////myform////*/
+#myform label.error {
+    display: none;
 }
