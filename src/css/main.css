@@ -313,7 +313,7 @@ ul {
     padding-bottom: 80px;
 }
 .content .desc-holder .text-wrap {
-    max-height: 220px;
+    max-height: 255px;
     overflow: hidden;
 }
 .content .desc-holder .text-wrap.open {
@@ -971,7 +971,8 @@ ul {
     text-align: center;
 }
 #myModal-callback .modal-content {
-    padding: 20px;
+    padding: 20px;  
+    text-align: center;
 }
 #myModal-callback .modal-body {
     padding: 0;
@@ -1229,7 +1230,8 @@ ul {
 
 /*//productModal//*/
 .productModal .modal-content {
-    padding: 40px 60px; 
+    padding: 20px 20px; 
+    text-align: center;
 }
 .productModal h1 {
     color: #5a5a5a;
