@@ -324,6 +324,7 @@ ul {
 } 
 .content .desc-holder .btn-holder {
     display: none;
+    cursor: pointer;
 }
 .content .desc-holder .btn-holder.active {
     display: inline-block;
@@ -448,6 +449,10 @@ ul {
 }
 #myModalVideo .modal-content {
     max-width: inherit;
+    text-align: center;
+}
+#myModalVideo .modal-content h1 {
+    text-align: center;
 }
 
 /*////////////number-blocks/////////////*/
@@ -750,6 +755,7 @@ ul {
     color: #5a5a5a;
     font-family: "Segoe UI";
     font-size: 24px;
+    outline: none;
     font-weight: 300;
     line-height: 11px;
     padding-left: 35px;
