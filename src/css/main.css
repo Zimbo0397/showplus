@@ -310,12 +310,13 @@ ul {
 }
 .content .desc-holder {
     padding-right: 50px;
+    padding-bottom: 80px;
 }
-.content .desc-holder p {
+.content .desc-holder .text-wrap {
     max-height: 220px;
     overflow: hidden;
 }
-.content .desc-holder p.open {
+.content .desc-holder .text-wrap.open {
     max-height: inherit;
 }
 .content .desc-holder.right {
@@ -326,6 +327,8 @@ ul {
 }
 .content .desc-holder .btn-holder.active {
     display: inline-block;
+    position: absolute;
+    bottom: 0;
 }
 /*////////////items//////////////////*/
 .items .product-item {
