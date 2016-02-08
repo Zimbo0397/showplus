@@ -1,0 +1,48 @@
+$('#myModalVideo').on('shown.bs.modal', function () {
+    $(function () {
+        'use strict';
+
+
+        // Initialize the Gallery as video carousel:
+        var myGal = blueimp.Gallery([
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg'
+            },
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg'
+            },
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg'
+            },
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg'
+            },
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg'
+            }
+        ], {
+            container: '#blueimp-video-carousel',
+            carousel: true,
+             startSlideshow: false
+        });
+        $('#blueimpPrev').on('click', function (e) {
+            e.preventDefault();
+            myGal.prev();
+        })
+        $('#blueimpNext').on('click', function (e) {
+            e.preventDefault();
+            myGal.next();
+        })
+
+    });
+})

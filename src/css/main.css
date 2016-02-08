@@ -405,7 +405,8 @@ ul {
 .items .bx-wrapper .bx-pager {
     display: none;
 }
-.content .blueimp-gallery a.prev {
+.content .blueimp-gallery a.prev,
+#myModalVideo .blueimp-gallery a.prev {
     background: url(../img/icons/left-nav-wt.png) no-repeat 1px;
     border: none;
     border-radius: 0;
@@ -416,13 +417,15 @@ ul {
     transition: .5s;
     background-size: cover;
 }
-.content .blueimp-gallery:hover a.prev {
+.content .blueimp-gallery:hover a.prev,
+#myModalVideo .blueimp-gallery:hover a.prev {
     left: 20px;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
 }
-.content .blueimp-gallery a.next {
+.content .blueimp-gallery a.next,
+#myModalVideo .blueimp-gallery a.next {
     background: url(../img/icons/right-nav-wt.png) no-repeat 1px;
     border: none;
     border-radius: 0;
@@ -433,13 +436,19 @@ ul {
     -o-transition: .5s;
     transition: .5s;
 }
-.content .blueimp-gallery:hover a.next {
+.content .blueimp-gallery:hover a.next,
+#myModalVideo .blueimp-gallery:hover a.next {
     right: 20px;
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
 }
-
+#myModalVideo {
+    z-index: 50000;
+}
+#myModalVideo .modal-content {
+    max-width: inherit;
+}
 
 /*////////////number-blocks/////////////*/
 .number-blocks {

@@ -209,7 +209,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="index.html#anch7">
+                                    <a href="" data-toggle="modal" data-target="#myModalVideo">
                                         <span>Видео</span>
                                     </a>
                                 </li>
@@ -549,10 +549,35 @@
           </div>
         </div>
 
+        <!-- ModalVideo -->
+        <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="video-holder">
+                    <div id="blueimp-video-carousel" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a href="#" class="prev"></a>
+                        <a href="#" class="next"></a>
+                    </div>
+                    <div class="nav-holder">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
 
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/vendor/demo2.js"></script>
         <script src="js/vendor/jquery.bxslider.min.js"></script>
         <script src="js/main.js"></script>
         <script>
