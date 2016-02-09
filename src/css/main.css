@@ -187,19 +187,18 @@ ul {
         left: 126px;
 }
 .items .bx-wrapper .bx-next {
-    background: url(../img/icons/left-nav.png) no-repeat 0 1px;
-        left: 10px;
+    background: url(../img/icons/right-nav.png) no-repeat 0 1px;
+        right: -53px;
         height: 47px;
 }
 .items .bx-wrapper .bx-prev {
-    background: url(../img/icons/right-nav.png) no-repeat 0 1px;
-        right: 6px;
-        left: auto;
+    background: url(../img/icons/left-nav.png) no-repeat 0 1px;
+        left: -57px;
         height: 47px;
 }
 .items .bx-wrapper .bx-next:hover,
 .items .bx-wrapper .bx-prev:hover {
-    -webkit-filter: brightness(10);
+    opacity: .8;
 }
 .main-slider .bxslider li .content-holder {
     position: absolute;
@@ -259,8 +258,8 @@ ul {
 
 /*///////////gen-header//////////////*/
 .gen-header {
-    margin-top: 100px;
-    margin-bottom: 115px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .gen-header h1 {
     color: #545353;
@@ -344,6 +343,9 @@ ul {
     margin-left: 13px;
     height: 70px;
     position: relative;
+}
+.items .item-slider-wraper .product-item .header-holder {
+    height: 22px;
 }
 .items .product-item .header-holder span {
     white-space: nowrap;
@@ -730,16 +732,13 @@ ul {
     height: 402px;
 }
 .item-slider-wraper .bx-wrapper .bx-prev {
-    background: url(../img/icons/right-nav.png) no-repeat 0 0px;
-    height: 48px;
-    right: -34px;
-    width: 27px;
+    left: -51px;
 }
-.item-slider-wraper .bx-wrapper .bx-next {
+/*.item-slider-wraper .bx-wrapper .bx-next {
     background: url(../img/icons/left-nav.png) no-repeat 0 0px;
     height: 48px;
     left: -34px;
-}
+}*/
 .product-nav ul {
     margin-left: 0;
     border-right: 1px solid #e5e2e2;
@@ -809,6 +808,7 @@ ul {
 .product-sell .btn-holder {
     display: inline-block;
     padding: 5px;
+    padding-top: 2px;
     border: 1px solid #247AD2;
     color: #247ad2;
     font-family: "Segoe UI";
@@ -956,7 +956,7 @@ ul {
     font-weight: 600;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
