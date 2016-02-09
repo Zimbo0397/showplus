@@ -259,7 +259,7 @@ ul {
 
 /*///////////gen-header//////////////*/
 .gen-header {
-    margin-top: 140px;
+    margin-top: 100px;
     margin-bottom: 115px;
 }
 .gen-header h1 {
@@ -311,6 +311,9 @@ ul {
 .content .desc-holder {
     padding-right: 50px;
     padding-bottom: 80px;
+}
+.content .desc-holder p {
+    margin-bottom: 0;
 }
 .content .desc-holder .text-wrap {
     max-height: 255px;
@@ -591,6 +594,7 @@ ul {
     padding-left: 0;
 }
 .cat-block .image-holder {
+    max-width: 540px;
     position: absolute;
     top: 0;
     left: 0;
@@ -646,7 +650,6 @@ ul {
     font-family: "Segoe UI";
     font-size: 30px;
     font-weight: 300;
-    line-height: 24px;
 }
 .cat-block .white-body .price-holder span {
     display: block;
