@@ -328,6 +328,15 @@
 	}
 }
 @media (max-width: 505px) {
+	#myModal-callback h4 {
+		font-size: 22px;
+	}
+	#myModal-callback .modal-body .half-input {
+		width: 100%;
+	}
+	.modal-footer button {
+		width: 200px;
+	}
 	.productModal .modal-content {
 	    padding: 40px 20px; 
 	} 
