@@ -1014,11 +1014,33 @@ ul {
 #myModal-callback .modal-body .half-input.rt {
     float: right;
 }
+.modal-body .serv-item .image-holder {
+    margin-bottom: 20px;
+}
+.modal-body .serv-item .text-wrap {
+    color: #5a5a5a;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
 .modal-content {
     max-width: 380px;
     margin: 0 auto;
     border-radius: 0;
 }
+.modal-content.serv h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #247ad2;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.modal-content.serv {
+    max-width: 100%;
+} 
 .modal-footer button {
     color: #fefefe;
     font-family: "Segoe UI";
