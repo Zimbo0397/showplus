@@ -1041,6 +1041,14 @@ ul {
 .modal-content.serv {
     max-width: 100%;
 } 
+.modal-content.serv .modal-footer button {
+    border: 1px solid #fff;
+}
+.modal-content.serv .modal-footer button:hover {
+    background: #fff;
+    color: #247ad2;
+    border: 1px solid #247ad2;
+}
 .modal-footer button {
     color: #fefefe;
     font-family: "Segoe UI";
