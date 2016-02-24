@@ -1069,9 +1069,47 @@ ul {
     border-top: 1px solid #E7E7E7;
 }
 .services .serv-item {
-    height: 603px;
+    height: 653px;
     margin-bottom: 40px;
     border: 1px solid #E5E2E2;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.services .serv-item.open {
+    height: auto;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.services .serv-item .btn-holder {
+    text-align: center;
+    display: none;
+}
+.services .serv-item .btn-holder.active {
+    display: block;
+}
+.services .serv-item .btn-holder.btnhd {
+    display: none;
+}
+.services .serv-item .btn-holder .btn-hide {
+    margin: 10px auto;
+    display: inline-block;
+    border: 1px solid #247AD2;
+    border-radius: 0;
+    color: #247AD2;
+    padding: 7px;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.services .serv-item .btn-holder .btn-hide:hover {
+    color: #fff;
+    background: #247AD2;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }
 .services .serv-item .image-holder {
     height: 338px;
@@ -1079,6 +1117,9 @@ ul {
 .services .serv-item .text-holder {
     height: 245px;
     overflow: hidden;
+}
+.services .serv-item .text-holder.open {
+    height: auto;
 }
 .services .serv-item .text-holder h1 {
     margin-top: 20px;

@@ -108,16 +108,25 @@
                     <div class="col-md-6">
                         <div class="serv-item">
                             <div class="image-holder">
-                                <img src="img/content/content-1.jpg" alt="">
+                                 <img src="img/content/content-1.jpg" alt="">
                             </div>
                             <div class="text-holder">
                                 <h1>
                                     Заголовок Услуги
                                 </h1>
-                                <p>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
-                                    <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
-                                </p>
+                                <div class="text-wrap">
+                                    <p>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
+                                        <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="btn-hide">
+                                    Читать больше
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,10 +139,19 @@
                                 <h1>
                                     Заголовок Услуги
                                 </h1>
-                                <p>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
-                                    <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
-                                </p>
+                                <div class="text-wrap">
+                                    <p>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
+                                        <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="btn-hide">
+                                    Читать больше
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,10 +164,19 @@
                                 <h1>
                                     Заголовок Услуги
                                 </h1>
-                                <p>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
-                                    <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
-                                </p>
+                                <div class="text-wrap">
+                                    <p>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta similique nemo vero neque, quibusdam ex error quod aliquam ipsum! Illo voluptatem, amet eligendi quis cumque facilis facere voluptate qui est!</span>
+                                        <span>Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                        Ducimus placeat earum sequi saepe ad. Porro enim sit fugit quibusdam perspiciatis beatae, non odit voluptatem ducimus rem magni blanditiis id tempora quo ullam voluptas cumque molestiae natus, doloribus at!</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="btn-hide">
+                                    Читать больше
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,6 +271,25 @@
 
             // slider = $('.item-slider').bxSlider();
             // $('#slide-next').on('click', slider.goToNextSlide)
+        </script>
+        <script>
+            $(window).on('load', function(){
+                var heightEelements = $('.serv-item .text-holder .text-wrap')
+                for (var i = 0; i < heightEelements.length; i++) {
+                    var $self = $(heightEelements[i]);
+                if ( $self.height() > 245) {
+                    console.log(this);
+                    $self.parent().next('.btn-holder').addClass('active')
+                    // $('.serv-item .btn-holder')
+                };
+                    
+                };
+            });
+            $('.serv-item .btn-holder').on('click', function(){
+                $(this).closest('.serv-item').addClass('open');
+                $(this).closest('.serv-item').find('.text-holder').addClass('open');
+                $(this).addClass('btnhd')
+            });
         </script>
     </body>
 </html>
