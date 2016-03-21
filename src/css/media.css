@@ -380,3 +380,22 @@
 		font-size: 14px;
 	}
 } 
+@media (max-width: 767px) {
+	.cat-block {
+	    padding-left: 225px;
+	}
+	.cat-block.rt {
+	    padding-right: 225px;
+	}
+	.cat-block .white-body h1 a {
+		font-size: 19px;
+	}
+}
+@media (max-width: 600px) {
+	.cat-block {
+		padding-left: 0px;
+	}
+	.cat-block.rt {
+		padding-right: 0px;
+	}
+}

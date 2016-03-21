@@ -1370,3 +1370,215 @@ ul {
     overflow: visible;
     background: #333 url('../img/loading.gif') no-repeat center center; 
 }
+
+
+
+/*//TODO//*/
+.main-slider {
+    position: relative;
+}
+.cat-block .white-body h1 a {
+    color: #464545;
+    text-decoration: none;
+}
+.cat-block .white-body .price-holder a {
+    color: #195da3;
+    text-decoration: none;
+}
+.main-slider .bunner {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    background: rgba(36, 122, 210, 0.74);;
+    color: #fff;
+    padding: 25px;
+    max-width: 321px;
+    cursor: pointer;
+    height: 138px;
+    overflow: hidden;
+}
+.main-slider .bunner a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-slider .bunner p {
+    font-size: 13px;
+}
+.main-slider .bunner h3 {
+    margin-top: 0;
+    font-size: 19px;
+}
+.product-nav ul li a {
+    font-size: 22px;
+}
+
+
+.tecnical-desc .btn-holder {
+    margin-top: 30px;
+}
+.logo-line a {
+    font-size: 16px;
+}
+.delivery {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.delivery  button {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    transition: all .5s;
+}
+.delivery  button:hover {
+    color: #247AD2;
+    transition: all .2s;
+}
+.delivery a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 505px) { 
+    .main-slider .bunner {
+        display: none;
+    }
+}
+#mydelivery .modal-body {
+    max-height: 480px;
+    overflow-y: auto;
+}
+#mydelivery .modal-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+
+}
+#mydelivery .modal-body::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+#mydelivery .modal-body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #247ad2;
+}
+.cat-block {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.serv-list {
+    color: #fff;
+}
+.serv-list li {
+    position: relative;
+    padding-left: 30px;
+}
+.serv-list li a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.serv-list li:hover a {
+    color: #2977CD;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.serv-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #2977CD;
+}
+.subscribe {
+    width: 220px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.subscribe input {
+    background: transparent;
+    border: 1px solid #2977CD;
+    padding: 5px;
+    padding-right: 30px;
+    font-weight: 100;
+    color: #2977CD;
+    outline: none;
+    cursor: pointer;
+}
+.subscribe input::-webkit-input-placeholder {
+    color: #2977CD;
+    font-weight: 100;
+}
+.subscribe input::-moz-placeholder {
+    color: #2977CD;
+    font-weight: 100;
+}/* Firefox 19+ */
+.subscribe input:-moz-placeholder {
+    color: #2977CD;
+    font-weight: 100;    
+}/* Firefox 18- */
+.subscribe input:-ms-input-placeholder {
+    color: #2977CD;
+    font-weight: 100;
+}
+.subscribe h6 {
+    margin-bottom: 5px;
+    color: #247AD2;
+}
+.subscribe button {
+    position: absolute;
+    top: -60px;
+    right: 7px;
+    color: #fff;
+    font-size: 23px;
+    background: transparent;
+    border: none;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    outline: none;
+}
+.subscribe button i {
+    color: #2977CD;
+}
+.subscribe input:focus ~ button,
+.subscribe input:hover button,
+.subscribe:hover input button,
+.subscribe input button:hover,
+.subscribe input button:focus {
+    top: 4px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.subscribe input button:focus {
+    top: -1px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.sub-holder h6 {
+    margin-bottom: 4px;
+    margin-top: 0;
+    color: #247AD2;
+    font-size: 13px;
+}
+.footer .rights {
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    .cat-block {
+        padding-left: 230px;
+    }
+}
