@@ -1582,3 +1582,28 @@ ul {
         padding-left: 230px;
     }
 }
+
+
+
+
+
+
+.delivery button {
+    font-size: 14px;
+}
+.cat-block .white-body h1 {
+    font-size: 23px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.cat-block:hover .white-body h1 {
+    color: #195da3;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.cooperation {
+    margin-bottom: 100px;
+}
